@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Contatti</title>
+    <link href="stile.css" rel="stylesheet">
+    <link rel="icon" href="facivon.jpg">
+
+</head>
+<body bgcolor="white">
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="chi_siamo.html">Chi siamo</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="Collezioni.html">Collezioni</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="header"> </div>
+</br></br>
+<!-- qui c'era trasparenza che l'ho levato per bug -->
+
+<img id="im" src="contatti.jpg" align="center" class="img_contatti" onload="aumentaOpacita()">
+<div class="container">
+    <div onclick="openNav()">
+        <div class="icona"></div>
+        <div class="icona"></div>
+        <div class="icona"></div>
+    </div>
+</div>
+<div class="facebook">
+    <a href="https://www.facebook.com/ledonnedi.caruso" target="_blank"><img src="fb.jpg"></a>
+</div>
+<div class="instagram">
+    <a href="https://www.instagram.com/ledonnedi/" target="_blank"><img src="instagram.jpg"></a>
+</div>
+<p class="p1"  >Hai un atelier in Italia?</p>
+<p class="p2" >Scrivici oppure chiamaci per avere maggiori informazioni!</p>
+<p class="p2" >Email: <font color="5d5785"> gaetanocaruso71@alice.it</font></p>
+<p class="p2" >Numero di telefono:<font color="5d5785"> +39 3420504337 </font></p>
+<p class="p2"> <a href="mailto:gaetanocaruso71@alice.it" target="_blank"><img src="email.jpg"></a><a href="https://wa.me/393420504337" target="_blank"><img src="whatsapp.jpg"></a>
+    <a href="tel:+393420504337" target="_blank"><img src="call.jpg"></a> </p>
+<form action="mailto:gaetanocaruso71@alice.it" method="post" name = "utente" enctype="text/plain">
+    <p align="center">
+        <strong>Nome e Cognome:</strong><br>
+        <input type="text" name="Nome e cognome">
+    </p>
+    <p align="center">
+        <strong>Mail:</strong><br>
+        <input type="text" name="Mail">
+    </p>
+    <p align="center">
+        <strong>Messaggio:</strong><br>
+        <input type="text" name="Messaggio">
+    </p>
+    <p align="center">
+        <input type="submit" value="Invia">
+        <input type="reset" value="Annulla">
+    </p>
+
+</form>
+<p align="center"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.9458617125065!2d14.267384400000001!3d40.938853699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b074615e75343%3A0x6287bb672a855587!2sVia%20Carmelo%20Pezzullo%2C%2020%2C%2080027%20Frattamaggiore%20NA!5e0!3m2!1sit!2sit!4v1620393374626!5m2!1sit!2sit" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+
+
+
+<footer id="footer-large">
+
+    <div class="footer-informazioni">
+        <div> <img src="logo bianco.jpg" width="220" alt=""/> </div>
+        <p class="footer_header">Le Donne Di nasce nel 2007 con l'obiettivo di realizzare capi esclusivi preservando la qualità e l'esperienza.
+        </p>
+    </div>
+
+
+    </div>
+
+        <div class="footer-menu">
+            <div class="menu-footer"><ul id="menu-menu-footer" class="menu">
+                <li><a class="a_footer" href="index.html">Homepage</a></li>
+                <li><a class="a_footer" href="chi_siamo.html">Chi siamo</a></li>
+                <li><a class="a_footer" href="Collezioni.html">Collezioni</a></li>
+                <li><a class="a_footer" href="contatti.html">Contatti</a></li>
+            </ul></div> <!-- Footer Menu -->
+        </div>
+
+        <div class="footer-contatti">
+
+            <div class="large_txt color-secondary">Contatti</div>
+            Tel: +39 3420504337<br/>
+            Email: <a href="mailto:gaetanocaruso71@alice.it">gaetanocaruso71@alice.it</a><br/>
+            Indirizzo: Via Carmelo Pezzullo, 20, 80027 Frattamaggiore NA.<br/>
+
+            <div class="social-cont">
+                <ul class="social-list">
+                    <li class="trans-color"><a target="_blank" href="https://www.facebook.com/ledonnedi.caruso"><img src="facebook-icon.png"  title="facebook" alt="Facebook icon"><br></a></li>
+                    <li class="trans-color"><a target="_blank" href="https://www.instagram.com/ledonnedi"><img src="instagram-icon.png" title="Instagram" alt="Instagram icon"><br></a></li>
+                </ul>
+                <div class="floatstop"></div>
+            </div><!--/fine social cont-->
+        </div>
+        <div class="floatstop"></div>
+        </div>	<!--/fine description -->
+    </div> <!--/fine footer container -->
+</footer>
+</body>
+<script type="text/javascript">
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "350px";
+    }
+
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+</script>
+<script>
+    var val = 0;
+    function cambiaOpacita(){
+        var immagine = document.getElementById("im");
+        immagine.style.opacity = val/100;
+        immagine.style.filter = 'alpha(opacity = ' + val + ')';
+    }
+    function aumentaOpacita()
+    {
+        val += 2;
+        cambiaOpacita();
+        if(val<100)
+        {
+            setTimeout("aumentaOpacita();", 50);
+        }
+    }
+</script>

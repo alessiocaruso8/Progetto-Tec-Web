@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Collezioni</title>
+    <link href="stile.css" rel="stylesheet">
+    <link rel="icon" href="facivon.jpg">
+
+    <style>
+    div.copertina {
+    margin: auto;
+    float: contour;
+        max-width: 100%;
+    width: 1000px;
+        height: auto;
+        transition: 0.8s ease;
+
+    }
+
+    div.copertina:hover {
+        transform : scale(1.1);
+        -moz-transform : scale(1.1); /* Firefox */
+        -webkit-transform : scale(1.1); /* Chrome - Safari */
+        -o-transform : scale(1.1); /* Opera */
+        -ms-transform : scale(1.1); /* IE */
+        position: center;
+    }
+
+    div.copertina img {
+    max-width: 100%;
+    height: auto;
+        border-radius: 4px;
+        border: 2px solid #ffffff;
+        position: center;
+    }
+
+
+    div.copertina2 {
+        margin: initial;
+        float: left;
+        max-width: 100%;
+        height: auto;
+        transition: 0.8s ease;
+        -moz-transition: 0.8s ease; /* Firefox */
+        -webkit-transition: 0.8s ease; /* Chrome - Safari */
+        -o-transition: 0.8s ease; /* Opera */
+        -ms-transform: initial;
+    }
+
+    div.copertina2:hover {
+        transform : scale(1.1);
+        -moz-transform : scale(1.1); /* Firefox */
+        -webkit-transform : scale(1.1); /* Chrome - Safari */
+        -o-transform : scale(1.1); /* Opera */
+        -ms-transform : scale(1.1); /* IE */
+        float: left;
+    }
+
+    div.copertina2 img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border: 2px solid #ffffff;
+        position: center;
+        border-radius: 4px;
+        float: left;
+    }
+
+    div.copertina3 {
+        margin: initial;
+        float: right;
+        max-width: 100%;
+        height: auto;
+        transition: 0.8s ease;
+        -moz-transition: 0.8s ease; /* Firefox */
+        -webkit-transition: 0.8s ease; /* Chrome - Safari */
+        -o-transition: 0.8s ease; /* Opera */
+        -ms-transform: initial;
+    }
+
+    div.copertina3:hover {
+        transform : scale(1.1);
+        -moz-transform : scale(1.1); /* Firefox */
+        -webkit-transform : scale(1.1); /* Chrome - Safari */
+        -o-transform : scale(1.1); /* Opera */
+        -ms-transform : scale(1.1); /* IE */
+        float: right;
+    }
+
+    div.copertina3 img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border: 2px solid #ffffff;
+        position: center;
+        float: right;
+        border-radius: 4px;
+    }
+
+
+
+    </style>
+</head>
+<body bgcolor="white">
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="chi_siamo.html">Chi siamo</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="Collezioni.html">Collezioni</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="header"> </div>
+</br></br></br>
+
+
+<!-- qui c'era trasparenza che l'ho levato per bug -->
+<div class="container">
+    <div onclick="openNav()">
+        <div class="icona"></div>
+        <div class="icona"></div>
+        <div class="icona"></div>
+    </div>
+</div>
+<div class="facebook">
+    <a href="https://www.facebook.com/ledonnedi.caruso" target="_blank"><img src="fb.jpg"></a>
+</div>
+<div class="instagram">
+    <a href="https://www.instagram.com/ledonnedi/" target="_blank"><img src="instagram.jpg"></a>
+</div>
+<div class="copertina">
+    <a class="desc_collezioni" target="_blank" href="2021.html">
+        <img id="im" src="2021a.jpg" onload="aumentaOpacita();">
+    <p class="desc">Scopri la nostra collezione 2020/2021</p>
+    </a></div>
+<div class="copertina2">
+    <a class="desc_collezioni" target="_blank" href="2019.html">
+        <img src="2019.jpg">
+        <p class="desc">Scopri la nostra collezione 2019</p>
+    </a></div>
+<div class="copertina3">
+    <a class="desc_collezioni" target="_blank" href="2018.html">
+        <img src="2018.jpg" style="float:left">
+        <p class="desc">Scopri la nostra collezione 2018</p>
+    </a></div>
+<div class="copertina2">
+    <a class="desc_collezioni" target="_blank" href="2017.html">
+        <img src="2017.jpg" style="float:left">
+        <p class="desc">Scopri la nostra collezione 2017</p>
+    </a></div>
+<div class="copertina3">
+    <a class="desc_collezioni" target="_blank" href="2016.html">
+        <img src="2016.jpg" style="float:left">
+        <p class="desc">Scopri la nostra collezione 2016</p>
+    </a></div>
+
+
+<footer id="footer-large">
+
+    <div class="footer-container">
+
+        <div class="footer-informazioni">
+            <div> <img src="logo bianco.jpg" width="220" alt=""/> </div>
+            <p class="footer_header">Le Donne Di nasce nel 2007 con l'obiettivo di realizzare capi esclusivi preservando la qualità e l'esperienza.
+            </p>
+        </div>
+
+
+        <div class="footer-menu">
+            <div class="menu-footer"><ul id="menu-menu-footer" class="menu">
+                <li><a class="a_footer" href="index.html">Homepage</a></li>
+                <li><a class="a_footer" href="chi_siamo.html">Chi siamo</a></li>
+                <li><a class="a_footer" href="Collezioni.html">Collezioni</a></li>
+                <li><a class="a_footer" href="contatti.html">Contatti</a></li>
+            </ul></div> <!-- Footer Menu -->
+        </div>
+
+        <div class="footer-contatti">
+
+            <div class="large_txt color-secondary">Contatti</div>
+            Tel: +39 3420504337<br/>
+            Email: <a href="mailto:gaetanocaruso71@alice.it">gaetanocaruso71@alice.it</a><br/>
+            Indirizzo: Via Carmelo Pezzullo, 20, 80027 Frattamaggiore NA.<br/>
+
+            <div class="social-cont">
+                <ul class="social-list">
+                    <li class="trans-color"><a target="_blank" href="https://www.facebook.com/ledonnedi.caruso"><img src="facebook-icon.png"  title="facebook" alt="Facebook icon"><br></a></li>
+                    <li class="trans-color"><a target="_blank" href="https://www.instagram.com/ledonnedi"><img src="instagram-icon.png" title="Instagram" alt="Instagram icon"><br></a></li>
+                </ul>
+                <div class="floatstop"></div>
+            </div><!--/fine social cont-->
+        </div>
+        <div class="floatstop"></div>
+    </div>	<!--/fine description -->
+    </div> <!--/fine footer container -->
+</footer>
+
+</body>
+<script type="text/javascript">
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "350px";
+    }
+
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+</script>
+<script>
+    var val = 0;
+    function cambiaOpacita(){
+        var immagine = document.getElementById("im");
+        immagine.style.opacity = val/100;
+        immagine.style.filter = 'alpha(opacity = ' + val + ')';
+    }
+    function aumentaOpacita()
+    {
+        val += 2;
+        cambiaOpacita();
+        if(val<100)
+        {
+            setTimeout("aumentaOpacita();", 50);
+        }
+    }
+</script>

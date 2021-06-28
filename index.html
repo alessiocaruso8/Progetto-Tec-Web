@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Le Donne Di</title>
+    <link href="stile.css" rel="stylesheet">
+    <link rel="icon" href="facivon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body id="im" bgcolor="white" onload="aumentaOpacita()">
+<style>
+    @media screen and (min-width: 1024px) {
+        body {
+            background-color: white;
+            background-image: url("home.jpg");
+            background-position: initial;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        body{
+            background-color: white;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("home.jpg");
+        }
+    }
+
+</style>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="chi_siamo.html">Chi siamo</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="Collezioni.html">Collezioni</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="header"> </div>
+</br></br></br>
+<!-- qui c'era trasparenza che l'ho levato per bug -->
+<div class="container">
+    <div onclick="openNav()">
+        <div class="icona"></div>
+        <div class="icona"></div>
+        <div class="icona"></div>
+    </div>
+</div>
+<div class="facebook">
+    <a href="https://www.facebook.com/ledonnedi.caruso" target="_blank"><img src="fb.jpg"></a>
+</div>
+<div class="instagram">
+    <a href="https://www.instagram.com/ledonnedi/" target="_blank"><img src="instagram.jpg"></a>
+</div>
+
+<div>
+    <div id="div1" class="testo_home" style="color: black; background-color: white; ">
+        <a class="a_testo_home" href="Collezioni.html" >
+            SCOPRI DI PIU </a>   </div>
+</div>
+
+    <script>
+    timeout_id = setTimeout(function(){document.getElementById('adv').style.display="block"}, 10000);
+</script>
+</body>
+</html>
+
+<script type="text/javascript">
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "350px";
+    }
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+</script>
+<script>
+    var val = 0;
+    function cambiaOpacita(){
+        var immagine = document.getElementById("im");
+        immagine.style.opacity = val/100;
+        immagine.style.filter = 'alpha(opacity = ' + val + ')';
+    }
+    function aumentaOpacita()
+    {
+        val += 2;
+        cambiaOpacita();
+        if(val<100)
+        {
+            setTimeout("aumentaOpacita();", 50);
+        }
+    }
+</script>
+
+<script>
+    //funzione per far apparire il testo SCOPRI DI PIU dopo 3 secondi
+    $(function(){
+        setTimeout(function(){
+            $("#div1").show();
+        }, 5500);
+    });
+</script>
