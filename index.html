@@ -31,11 +31,8 @@
     }
 
 </style>
-<!-- The overlay -->
 <div id="myNav" class="overlay">
-    <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <!-- Overlay content -->
     <div class="overlay-content">
         <a href="index.html">Home</a>
         <a href="chi_siamo.html">Chi siamo</a>
@@ -44,10 +41,8 @@
     </div>
 </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
 <div class="header"> </div>
 </br></br></br>
-<!-- qui c'era trasparenza che l'ho levato per bug -->
 <div class="container">
     <div onclick="openNav()">
         <div class="icona"></div>
@@ -75,11 +70,9 @@
 </html>
 
 <script type="text/javascript">
-    /* Open when someone clicks on the span element */
     function openNav() {
         document.getElementById("myNav").style.width = "350px";
     }
-    /* Close when someone clicks on the "x" symbol inside the overlay */
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
@@ -104,7 +97,6 @@
 </script>
 
 <script>
-    //funzione per far apparire il testo SCOPRI DI PIU dopo 3 secondi
     $(function(){
         setTimeout(function(){
             $("#div1").show();
