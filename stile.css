@@ -184,7 +184,6 @@
 }
 
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
     div.header {
         font-size: 30px;
@@ -195,7 +194,7 @@
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin: 0 auto; /* centriamo contenitore principale */
+    margin: 0 auto; 
 }
 
 p.p1{
@@ -382,12 +381,12 @@ a.home{
 
 
 #footer-large a{
-    color:#ffffff; /* seconday color*/
+    color:#ffffff; 
     text-decoration: none;
 }
 
 #footer-large a:hover{
-    color:#ffffff; /* light seconday color*/
+    color:#ffffff; 
     text-decoration: none;
 }
 
@@ -405,7 +404,7 @@ a.home{
     height: 32px;
     width: 32px;
     border-radius: 100em;
-    background-color:#000000; /* secondary-color*/
+    background-color:#000000; 
 }
 
 #footer-large .social-cont .social-list li img {
@@ -413,15 +412,14 @@ a.home{
 }
 
 #footer-large .social-cont .social-list > li:hover {
-    background:#000000; /* light seconday color*/
+    background:#000000; 
 }
 
-/* -----------------footer-large------------------ */
 #footer-large{
     width: 100%;
     border-top: 1px solid #ffffff;
     padding-top: 20px;
-    background-color: #000000;/* primary color*/
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -435,8 +433,8 @@ a.home{
 
 #footer-large .footer-contatti{
     padding: 1px 0;
-    border-left: 1px solid #ffffff;/* primary color*/
-    border-right: 1px solid #ffffff;/* primary color*/
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -447,8 +445,8 @@ a.home{
 
     #footer-large .footer-informazioni{
         padding: 30px 0;
-        border-left: 1px solid #ffffff;/* primary color*/
-        border-right: 1px solid #ffffff;/* primary color*/
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
         box-sizing: border-box;
     }
 
